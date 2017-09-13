@@ -1,0 +1,33 @@
+{
+	"manifestVersion": 1,
+	"id": "HelloBuildTask",
+	"version": "1.0.1",
+	"name": "Hello World",
+	"description": "A VSTS Build Task that prints Hello World to the Console",
+	"publisher": "hoefling-software",
+	"targets": [
+		{
+			"id": "Microsoft.VisualStudio.Services"
+			}
+		],
+	"icons": {
+		"default": "icon.png"
+	 },
+	"contributions": [
+		{
+			"id": "HelloBuildTask",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "buildtask"
+			}
+		}
+	],
+	"files":[
+		{
+			"path": "buildtask"			
+		}
+	]
+}
